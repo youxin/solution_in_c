@@ -1,0 +1,42 @@
+to find kth largest element
+
+Algorithm 1A: 
+	simple sorting O(N^2)
+
+Algorithm 1B: 
+	read k elements, sort, 
+	process remaining one by one, 
+	O(N * K), 
+	if k is n/2, time is (N^2)
+
+Algorithm 6A
+	read n elements into array
+	build_heap  --- 0(n)
+	perform k delete_min --- k*LogN
+	if k = n/logN, 
+		O(N)
+	if k is large
+		O(K*log N)
+	if k is n/2
+		<< N*LogN (sort N elements using heap)
+		
+Algorithm 6B
+	read k elements into array S
+	build_heap -- O(k)
+	process each of remainings 
+		test if new element go into S ---O(logk)
+		if yes,
+			delete S(k) ---O(logK)
+			insert the new element ---O(1)
+	timming = O(k + (n-k)logK) = O(N LogK) 
+	worst timing: N LogN
+			
+			
+Algorithm 7	
+	average in O(n)
+
+Algorithm 10
+	worst-case time O(n)
+	
+
+
