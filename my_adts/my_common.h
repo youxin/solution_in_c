@@ -4,5 +4,6 @@
 #include <stdio.h>      /* printf, scanf, NULL */
 #include <stdlib.h>     /* malloc, free, rand */
 #include <assert.h>
+#include <limits.h>
 
 #endif
